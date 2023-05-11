@@ -63,18 +63,17 @@
 
   <script>
     var formulario = document.getElementById('formulario');
-
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
         
-        alert('salvadon');
+        alert('salvado');
         var datosenviar = {
         nombre: 'Multimedios 01',
-        descripcion: 'Daniela',
+        descripcion: 'Andrey',
         tiempo: '1 Semestre', 
-        usuario: 'Daniela'
+        usuario: 'Andrey'
     }
-    
+
 
     fetch("https://paginas-web-cr.com/ApiPHP/apis/InsertarCursos.php",
     {
