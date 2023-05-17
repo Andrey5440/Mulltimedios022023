@@ -32,7 +32,7 @@
                 <div class="mb-3">
                     <label for="" class="form-label">Descripcion</label>
                     <input type="text"
-                        class="form-control" name="descripcion" id="descripcion" aria-describedby="helpId" placeholder="Ingresa la Descripcion del curso">
+                        class="form-control" name="Descripcion" id="Descripcion" aria-describedby="helpId" placeholder="Ingresa la Descripcion del curso">
                     <small id="helpId" class="form-text text-muted">Descripcion del curso</small>
                 </div>
                 <div class="mb-3">
@@ -75,18 +75,18 @@
         alert('salvando');
 
 
-        var datosenviar ={
+        var datasend ={
             nombre:nombre, 
             descripcion:descripcion, 
             tiempo:tiempo,
             usuario:"profesor Mario"
         };
-        console.log(datosenviar);
+        console.log(datasend);
 
-        fetch("https://paginas-web-cr.com/ApiPHP/apis/insertarCursos.php",
+        fetch("https://paginas-web-cr.com/ApiPHP/apis/InsertarCursos.php",
         {
             method:"POST",
-            body: JSON.stringify(datosenviar)
+            body: JSON.stringify(datasend)
         })//url de peticion
         .then(answer => answer.json())//recibe y envia en json
         .then((answerdata) => {
